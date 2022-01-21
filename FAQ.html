@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="FAQ.css">
+    
+</head>
+<body>
+    <header>
+        
+        <nav><ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="site.html">Sites d'intérets</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Propos.html">À propos</a></li>
+            <li><a href="problemes.html">Problèmes</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="nola.html">Solutions</a>
+        </ul></nav>
+    </header>
+
+    <h1>Accordion</h1>
+
+    <button class="accordion">Combien chargez-vous?</button>
+    <div class="panel">
+      <p>Les prix varient selon les services et l'abonnement.</p>
+    </div>
+    
+    <button class="accordion">Êtes-vous une firme d'impartition?</button>
+    <div class="panel">
+      <p>Malheureusement, nous ne sommes pas une firme d'impartition.</p>
+    </div>
+    
+    <button class="accordion">Pouvez-vous m'aidez avec mes problèmes d'imprimante?</button>
+    <div class="panel">
+      <p>Biensur, visitez notre page "problèmes".</p>
+    </div>
+    
+     
+    <button class="accordion">Vendez-vous des disques durs?</button>
+    <div class="panel">
+      <p>Appeler au 514-648-7472, ils ont les meuilleurs prix sur le marché.</p>
+    </div>
+     
+    <button class="accordion">Pouvez-vous monter le réseau internet de ma compagnie?</button>
+    <div class="panel">
+      <p>Oui, on peut le faire.</p>
+    </div>
+
+    <button class="accordion">Auriez-vous besoin de main d'oeuvre?</button>
+    <div class="panel">
+      <p>Envoyer nous votre CV, on vous repondra dans les prochaines 48 heures.</p>
+    </div>
+    
+    
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    
+    <footer>
+     
+      <a href="https://www.facebook.com/">
+          <img src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png' >
+      </a>
+      <a href="https://www.linkedin.com/">
+          <img src = 'linkedin-logo-512x512.png' height = 50px>
+      </a>
+      
+      
+      
+      <ul>
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="site.html">Sites d'intérets</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Propos.html">À propos</a></li>
+          <li><a href="problemes.html">Problèmes</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="nola.html">Solutions</a></li>
+          </ul>
+      
+          <a href="mailto:cputechnique@csdm.ca ">cputechnique@csdm.ca</a>
+      
+       
+      </footer>
+
+</body>
+</html>
